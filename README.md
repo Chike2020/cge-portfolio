@@ -63,4 +63,11 @@ labs/
 &#x20;   └── evidence/
 
 ```
+## About Me
+IT/GRC professional with 5+ years in Vulnerability Management, Project Management, and Compliance. Dual-licensed attorney (NY Bar 2020, Nigerian Bar 2013) transitioning into cloud security engineering.
 
+**Current Focus:** Building scalable compliance automation systems using IaC.
+
+## Connect
+- LinkedIn: https://www.linkedin.com/in/gideon-okechukwu/
+- Email: cgideonokechukwu@gmail.com
