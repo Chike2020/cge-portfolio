@@ -23,6 +23,8 @@ Thumbs.db
 *.swp
 *.swo
 *~
+# Evidence is OK to keep
+!evidence/
 # Local .terraform directories
 .terraform/
 
