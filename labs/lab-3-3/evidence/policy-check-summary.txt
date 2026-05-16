@@ -1,0 +1,26 @@
+Lab 3.3: OPA Policy Check Results
+Generated: 2026-05-15
+
+=== SC-28: Encryption at Rest ===
+Status: Monitoring encryption configuration
+Note: All buckets in plan have encryption blocks configured
+
+=== AC-3: Access Enforcement ===
+Violations Found: 2
+
+1. [AC-3] google_compute_firewall.open_ssh: management port 22 open to 0.0.0.0/0
+   Remediation: Narrow source_ranges or remove the rule
+
+2. [AC-3] google_storage_bucket.bad_public: bucket allows public access
+   Remediation: Set uniform_bucket_level_access=true and public_access_prevention="enforced"
+
+=== CM-6: Configuration Settings ===
+Violations Found: 1
+
+1. [CM-6] google_storage_bucket.bad_no_labels: missing required labels ["compliance_scope", "environment", "managed_by", "project"]
+   Remediation: Add the missing labels to the resource
+
+=== Summary ===
+Total Policies: 3
+Total Tests: 6/6 PASSED
+Total Violations Detected: 3
