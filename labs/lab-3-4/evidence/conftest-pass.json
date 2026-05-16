@@ -1,0 +1,59 @@
+﻿[
+    {
+        "filename":  "C:\\Users\\okech\\OneDrive\\Desktop\\terraform\\labs\\lab-3-4\\broken\\plan.json",
+        "namespace":  "compliance.sc28_aws",
+        "successes":  0,
+        "failures":  [
+                         {
+                             "msg":  "[SC-28] aws_s3_bucket.bad_no_encryption: aws_s3_bucket has no matching aws_s3_bucket_server_side_encryption_configuration. Add one referencing this bucket.",
+                             "metadata":  {
+                                              "query":  "data.compliance.sc28_aws.deny"
+                                          }
+                         }
+                     ]
+    },
+    {
+        "filename":  "C:\\Users\\okech\\OneDrive\\Desktop\\terraform\\labs\\lab-3-4\\broken\\plan.json",
+        "namespace":  "compliance.ac3_aws",
+        "successes":  0,
+        "failures":  [
+                         {
+                             "msg":  "[AC-3] aws_s3_bucket.bad_no_encryption: missing or incomplete aws_s3_bucket_public_access_block. All four flags must be true.",
+                             "metadata":  {
+                                              "query":  "data.compliance.ac3_aws.deny"
+                                          }
+                         },
+                         {
+                             "msg":  "[AC-3] aws_s3_bucket.bad_no_pab: missing or incomplete aws_s3_bucket_public_access_block. All four flags must be true.",
+                             "metadata":  {
+                                              "query":  "data.compliance.ac3_aws.deny"
+                                          }
+                         }
+                     ]
+    },
+    {
+        "filename":  "C:\\Users\\okech\\OneDrive\\Desktop\\terraform\\labs\\lab-3-4\\broken\\plan.json",
+        "namespace":  "compliance.cm6_aws",
+        "successes":  0,
+        "failures":  [
+                         {
+                             "msg":  "[CM-6] aws_s3_bucket.bad_no_encryption: missing required tags [\"ComplianceScope\", \"Environment\", \"ManagedBy\", \"Project\"]. Add the missing tags or use provider default_tags.",
+                             "metadata":  {
+                                              "query":  "data.compliance.cm6_aws.deny"
+                                          }
+                         },
+                         {
+                             "msg":  "[CM-6] aws_s3_bucket.bad_no_pab: missing required tags [\"ComplianceScope\", \"Environment\", \"ManagedBy\", \"Project\"]. Add the missing tags or use provider default_tags.",
+                             "metadata":  {
+                                              "query":  "data.compliance.cm6_aws.deny"
+                                          }
+                         },
+                         {
+                             "msg":  "[CM-6] aws_s3_bucket.bad_no_tags: missing required tags [\"ComplianceScope\", \"Environment\", \"ManagedBy\", \"Project\"]. Add the missing tags or use provider default_tags.",
+                             "metadata":  {
+                                              "query":  "data.compliance.cm6_aws.deny"
+                                          }
+                         }
+                     ]
+    }
+]
